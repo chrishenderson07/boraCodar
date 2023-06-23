@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600;700&display=swap');
+
+*,
+input,
+button {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+	background: none;
+
+	text-decoration: none;
+}
+
+:root {
+	font-size: 62.5%;
+
+	--gray-800: #1e293b;
+	--gray-600: #475569;
+	--gray-400: #94a3b8;
+	--gray-200: #e2e8f0;
+}
+
+body {
+	font-family: 1rem;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.background {
+	background: url('./src/assets/img.png') no-repeat center center;
+	height: 100vh;
+	width: 100%;
+}
+
+.container main {
+	padding: 4rem 0;
+	width: 70%;
+	margin: 0 auto;
+}
+
+main .header {
+	margin-bottom: 11rem;
+}
+
+.content h2 {
+	color: var(--gray-800);
+	font-size: 3.6rem;
+	font-weight: 700;
+	margin-bottom: 1.6rem;
+	line-height: 4.2rem;
+}
+
+.content p {
+	font-weight: 600;
+	font-size: 1.6rem;
+	color: var(--gray-600);
+	line-height: 2.2rem;
+}
+
+.content {
+	display: grid;
+}
+
+.form {
+	margin-top: 4rem;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
+}
+
+.form-group {
+	display: grid;
+}
+
+.form-group .label-line {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 0.8rem;
+}
+
+.form-group input {
+	padding: 1.6rem 1.2rem;
+	border-radius: 4px;
+	border: 1px solid var(--gray-200);
+	color: var(--gray-800);
+}
+
+.form-group input::placeholder {
+	color: var(--gray-400);
+}
