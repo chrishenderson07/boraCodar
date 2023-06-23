@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./src/css/style.css" />
+		<title>Calculator</title>
+	</head>
+	<body>
+		<main>
+			<div class="calculator">
+				<div class="display">
+					<div class="operation"></div>
+					<div class="result-wrapper">
+						<div class="equal">=</div>
+						<div class="result"></div>
+					</div>
+				</div>
+
+				<div class="teclado">
+					<button id="ce" class="key" onclick="clearAll()">CE</button>
+					<button id="c" class="key" onclick="clearOperate()">C</button>
+					<button id="percent" class="key" value="%">%</button>
+					<button id="divide" class="key" value="/">
+						<svg
+							width="28"
+							height="28"
+							viewBox="0 0 28 28"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M3.5 14C3.5 13.5168 3.89175 13.125 4.375 13.125H23.625C24.1082 13.125 24.5 13.5168 24.5 14C24.5 14.4832 24.1082 14.875 23.625 14.875H4.375C3.89175 14.875 3.5 14.4832 3.5 14Z"
+								fill="#EBEBEB" />
+							<path
+								d="M14 8.75C14.9665 8.75 15.75 7.9665 15.75 7C15.75 6.0335 14.9665 5.25 14 5.25C13.0335 5.25 12.25 6.0335 12.25 7C12.25 7.9665 13.0335 8.75 14 8.75Z"
+								fill="#EBEBEB" />
+							<path
+								d="M14 22.75C14.9665 22.75 15.75 21.9665 15.75 21C15.75 20.0335 14.9665 19.25 14 19.25C13.0335 19.25 12.25 20.0335 12.25 21C12.25 21.9665 13.0335 22.75 14 22.75Z"
+								fill="#EBEBEB" />
+						</svg>
+					</button>
+
+					<button id="seven" class="key" value="7">7</button>
+					<button id="eight" class="key" value="8">8</button>
+					<button id="nine" class="key" value="9">9</button>
+
+					<button id="mult" class="key" value="*">X</button>
+
+					<button id="four" class="key" value="4">4</button>
+					<button id="five" class="key" value="5">5</button>
+					<button id="six" class="key" value="6">6</button>
+
+					<button id="sub" class="key" value="-">-</button>
+
+					<button id="one" class="key" value="1">1</button>
+					<button id="two" class="key" value="2">2</button>
+					<button id="three" class="key" value="3">3</button>
+
+					<button id="sum" class="key" value="+">+</button>
+					<button id="sumSub" class="key">
+						<svg
+							width="28"
+							height="28"
+							viewBox="0 0 28 28"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M22.4937 5.50628C22.8354 5.84799 22.8354 6.40201 22.4937 6.74372L6.74372 22.4937C6.40201 22.8354 5.84799 22.8354 5.50628 22.4937C5.16457 22.152 5.16457 21.598 5.50628 21.2563L21.2563 5.50628C21.598 5.16457 22.152 5.16457 22.4937 5.50628Z"
+								fill="#EBEBEB" />
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M2.625 7.875C2.625 7.39175 3.01675 7 3.5 7H12.25C12.7332 7 13.125 7.39175 13.125 7.875C13.125 8.35825 12.7332 8.75 12.25 8.75H3.5C3.01675 8.75 2.625 8.35825 2.625 7.875Z"
+								fill="#EBEBEB" />
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M7.875 2.625C8.35825 2.625 8.75 3.01675 8.75 3.5V12.25C8.75 12.7332 8.35825 13.125 7.875 13.125C7.39175 13.125 7 12.7332 7 12.25V3.5C7 3.01675 7.39175 2.625 7.875 2.625Z"
+								fill="#EBEBEB" />
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M14.875 20.125C14.875 19.6418 15.2668 19.25 15.75 19.25H24.5C24.9832 19.25 25.375 19.6418 25.375 20.125C25.375 20.6082 24.9832 21 24.5 21H15.75C15.2668 21 14.875 20.6082 14.875 20.125Z"
+								fill="#EBEBEB" />
+						</svg>
+					</button>
+
+					<button id="zero" class="key" value="0">0</button>
+
+					<button id="comma" class="key" value=".">,</button>
+					<button id="equal" class="key" onclick="handleResult()">=</button>
+				</div>
+			</div>
+		</main>
+
+		<script src="./src/js/index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono:wght@700&display=swap');
+
+:root {
+	font-size: 62.5%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font: normal 700 2rem/2.5rem 'Roboto Mono', monospace;
+	color: #a1a1aa;
+	padding: 5rem 12rem;
+
+	background-color: #1e1e1e;
+}
+#register {
+	font: normal 600 1.6rem 'Inter', sans-serif;
+	color: #fff;
+
+	background: none;
+	border: 1px solid #8b5cf6;
+	border-radius: 8px;
+	padding: 1.6rem 2.4rem;
+
+	display: flex;
+	gap: 1.2rem;
+	cursor: pointer;
+	transition: background 0.3s;
+}
+
+#register path {
+	transition: all 0.3s;
+}
+
+#register:hover,
+#register:hover svg path {
+	background: #8b5cf6;
+	stroke: #fff;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin-bottom: 4rem;
+	width: max(60rem, 85vw);
+
+	position: fixed;
+}
+
+form {
+	display: flex;
+	gap: 2.4rem;
+
+	padding: 10rem 4.8rem 4.8rem 0;
+	width: 1200px;
+}
+
+.habits {
+	margin-top: 5rem;
+
+	display: flex;
+	flex-direction: column;
+	gap: 2.4rem;
+}
+
+.habit {
+	width: 6.4rem;
+	height: 6.4rem;
+
+	font-size: 3.2rem;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.days {
+	display: flex;
+	gap: 4.8rem;
+}
+
+.day {
+	display: flex;
+	flex-direction: column;
+	gap: 2.4rem;
+	text-align: center;
+}
+
+.day div:nth-child(1) {
+	margin-bottom: 0.8rem;
+}
+
+/* Inputs */
+
+input {
+	appearance: none;
+	-webkit-appearance: none;
+
+	background-color: #18181b;
+	border: 2px solid #27272a;
+	border-radius: 8px;
+
+	width: 6.4rem;
+	height: 6.4rem;
+	transition: all 0.3s;
+
+	cursor: pointer;
+}
+
+input:hover,
+input:active {
+	box-shadow: 0px 0px 10px 0px #a78bfa;
+}
+
+input:checked {
+	background-color: #8b5cf6;
+	border: 2px solid #a78bfa;
+}
+
+/* Responsivity */
+
+@media (max-width: 425px) {
+	#register span {
+		display: none;
+	}
+}
