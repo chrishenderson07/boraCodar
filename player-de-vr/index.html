@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Player de VR</title>
+
+		<link
+			rel="stylesheet"
+			href="style.css" />
+	</head>
+	<body>
+		<main>
+			<div id="video-player">
+				<div class="nav-bar">
+					<div class="actions-icons">
+						<svg
+							viewBox="0 0 26 26"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M20 3H4C2.89543 3 2 3.89543 2 5V19C2 20.1046 2.89543 21 4 21H20C21.1046 21 22 20.1046 22 19V5C22 3.89543 21.1046 3 20 3Z"
+								stroke="white"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path
+								d="M9 3V21"
+								stroke="white"
+								stroke-width="1.5" />
+						</svg>
+
+						<ion-icon name="chevron-back-outline"></ion-icon>
+						<ion-icon name="chevron-forward-outline"></ion-icon>
+					</div>
+					<div class="address-bar">
+						<ion-icon name="text-outline"></ion-icon>
+						<div class="address">
+							<ion-icon name="lock-closed"></ion-icon>
+							<p>rocketseat.com</p>
+						</div>
+						<ion-icon name="refresh-outline"></ion-icon>
+					</div>
+					<div class="actions-icons">
+						<ion-icon name="share-outline"></ion-icon>
+						<ion-icon name="add-outline"></ion-icon>
+						<ion-icon name="copy-outline"></ion-icon>
+					</div>
+				</div>
+				<div class="video-content"></div>
+				<div class="side-menu">
+					<ion-icon name="play-circle-outline"></ion-icon>
+					<ion-icon name="accessibility-outline"></ion-icon>
+					<ion-icon name="albums-outline"></ion-icon>
+					<ion-icon name="search-outline"></ion-icon>
+				</div>
+			</div>
+		</main>
+
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	</body>
+</html>
