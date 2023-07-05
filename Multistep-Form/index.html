@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="stylesheet"
+			href="style.css" />
+
+		<title>Multistep Form</title>
+	</head>
+	<body>
+		<main id="app">
+			<form>
+				<div class="step-progress">
+					<strong class="active done">Contato</strong>
+					<strong class="active">Empresa</strong>
+					<strong>Projeto</strong>
+				</div>
+
+				<div class="form-step active">
+					<div class="content">
+						<div class="input-wrapper">
+							<label for="name">Nome</label>
+							<input
+								type="text"
+								name="name"
+								id="name"
+								placeholder="Como prefere ser chamado?"
+								required />
+						</div>
+						<div class="input-wrapper">
+							<label for="email">E-mail</label>
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="Digite o seu melhor email"
+								required />
+						</div>
+						<div class="input-wrapper">
+							<label for="name">Telefone</label>
+							<input
+								type="text"
+								name="telefone"
+								id="telefone"
+								placeholder="Digite o seu Whatsapp"
+								onkeypress="return /\d/.test(event.key)" />
+						</div>
+					</div>
+					<div class="button-wrapper justify-end">
+						<button
+							type="button"
+							class="btn primary">
+							Continuar
+						</button>
+					</div>
+				</div>
+
+				<div class="form-step">
+					<div class="content">
+						<div class="input-wrapper">
+							<label for="business-name">Nome da empresa</label>
+							<input
+								type="text"
+								name="business-name"
+								id="business-name"
+								placeholder="Qual é o nome da empresa"
+								required />
+						</div>
+						<div class="input-wrapper">
+							<label for="business-colab">Numero de funcionários</label>
+							<input
+								type="email"
+								name="business-colab"
+								id="business-colab"
+								placeholder="Digite o numero de colaboradores"
+								onkeypress="return /\d/.test(event.key)" />
+						</div>
+						<div class="input-wrapper">
+							<label for="business-about">Sobre seu negócio</label>
+							<textarea
+								name="business-about"
+								id="business-about"
+								placeholder="Fale sobre os seus produtos e serviços"></textarea>
+						</div>
+					</div>
+					<div class="button-wrapper">
+						<button
+							type="button"
+							class="btn secondary">
+							Voltar
+						</button>
+						<button
+							type="button"
+							class="btn primary">
+							Continuar
+						</button>
+					</div>
+				</div>
+
+				<div class="form-step">
+					<div class="content">
+						<div class="input-wrapper">
+							<label for="project">Objetivos do projeto</label>
+							<textarea
+								name="project"
+								id="project"
+								placeholder="Descreva quais objetivos deste projeto"></textarea>
+						</div>
+					</div>
+					<div class="button-wrapper">
+						<button
+							type="button"
+							class="btn secondary">
+							Voltar
+						</button>
+						<button
+							class="btn primary"
+							type="submit">
+							Enviar Resposta
+						</button>
+					</div>
+				</div>
+			</form>
+		</main>
+
+		<script src="index.js"></script>
+	</body>
+</html>
